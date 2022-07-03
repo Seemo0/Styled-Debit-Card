@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payement</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="scene">
+        <div class="card">
+            <div class="card-face front">
+                <h2>BANK OF AFRICA</h2>
+                <p class="title-card">BMCE GROUP</p>
+                <img src="images/008-carte-RFID-sans-contact.png" class="rfid">
+                <div class="puce">
+                    <img src="images/icons8-chip-card-100.png">
+                </div>
+                <div class="card-number">
+                    <input type="text" value="####" maxlength="4" autocomplete="off" spellcheck="false"></input>
+                    <input type="text" value="####" maxlength="4" autocomplete="off" spellcheck="false"></input>
+                    <input type="text" value="####" maxlength="4" autocomplete="off" spellcheck="false"></input>
+                    <input type="text" value="####" maxlength="4" autocomplete="off" spellcheck="false"></input>
+                </div>
+                <div class="card-bottom">
+                    <div class="date-exp">
+                        <p style="font-weight: 600;">VALID
+                            <br>
+                           THRU
+                        </p>
+                        <input type="text" value="MM/YY" autocomplete="off" spellcheck="false"></input>
+                    </div>
+                    <div class="card-name">
+                        <img src="images/play--v1.png" class="arrow">
+                        <input type="text" value="Full Name" autocomplete="off" spellcheck="false"></input>
+                    </div> 
+                </div>
+                <i class='bx bxl-visa'></i>
+            </div>
+            <div class="card-face back">
+                <div class="magnet"></div>
+                <div class="cvv">
+                    <div class="title">
+                        SIGNATURE AUTORISEE
+                    </div>
+                    <div class="cvv-container">
+                        <input type="text" maxlength="3" placeholder="***" autocomplete="off" spellcheck="false"></input>
+                    </div>
+                </div>
+                <i class='bx bxl-visa'></i>
+            </div>
+        </div>
+    </div>
+    <button onclick="turn()">Turn</button>
+</body>
+</html>
